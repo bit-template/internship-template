@@ -1,0 +1,171 @@
+name: Project Assignment
+description: Assign an intern to a project
+title: "[PROJECT] "
+labels:
+  - project-assignment
+body:
+  - type: input
+    id: trainee_name
+    attributes:
+      label: Intern Name
+      placeholder: Anand G
+    validations:
+      required: true
+
+  - type: input
+    id: mentor_name
+    attributes:
+      label: Mentor Name
+      placeholder: John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: project_name
+    attributes:
+      label: Project Name
+      placeholder: FaaS Platform
+    validations:
+      required: true
+
+  - type: input
+    id: repository_name
+    attributes:
+      label: Repository
+      description: Repository where contributions will be made
+      placeholder: organization/faas-platform
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contributor_level
+    attributes:
+      label: Contributor Level
+      options:
+        - Associate Contributor
+        - Project Contributor
+        - Technical Lead Intern
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Assignment Start Date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: true
+
+  - type: textarea
+    id: project_overview
+    attributes:
+      label: Project Overview
+      description: Brief summary of the project and its goals
+      placeholder: |
+        This project provides a lightweight Function-as-a-Service platform
+        for hosting AI agents and remote services.
+    validations:
+      required: true
+
+  - type: textarea
+    id: responsibilities
+    attributes:
+      label: Assigned Responsibilities
+      description: Responsibilities expected from the intern
+      placeholder: |
+        - Participate in sprint planning
+        - Complete assigned issues
+        - Submit pull requests
+        - Update documentation
+        - Attend review meetings
+    validations:
+      required: true
+
+  - type: textarea
+    id: starter_tasks
+    attributes:
+      label: Starter Tasks
+      description: Initial tasks to help the intern get familiar with the project
+      placeholder: |
+        - Clone repository
+        - Build project locally
+        - Read architecture documentation
+        - Complete Good First Issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: onboarding_requirements
+    attributes:
+      label: Project Onboarding Requirements
+      description: Documents or activities required before contributing
+      placeholder: |
+        - Read README.md
+        - Read CONTRIBUTING.md
+        - Review architecture diagrams
+        - Attend onboarding session
+
+  - type: textarea
+    id: initial_issues
+    attributes:
+      label: Initial Assigned Issues
+      description: List issue numbers or links
+      placeholder: |
+        - FaaS-101 Node Registration Service
+        - FaaS-102 Health Check API
+
+  - type: textarea
+    id: expected_outcomes
+    attributes:
+      label: Expected Outcomes
+      description: What success looks like for this assignment
+      placeholder: |
+        - Successfully complete onboarding
+        - Submit first approved Pull Request
+        - Participate in code reviews
+        - Complete assigned sprint tasks
+    validations:
+      required: true
+
+  - type: dropdown
+    id: duration
+    attributes:
+      label: Expected Assignment Duration
+      options:
+        - 1 Month
+        - 2 Months
+        - 3 Months
+        - 6 Months
+        - Ongoing
+
+  - type: checkboxes
+    id: readiness_checklist
+    attributes:
+      label: Readiness Checklist
+      options:
+        - label: Training completed
+        - label: GitHub workflow understood
+        - label: Pull Request process understood
+        - label: Code review process understood
+        - label: Development environment configured
+        - label: Mentor assigned
+
+  - type: textarea
+    id: mentor_notes
+    attributes:
+      label: Mentor Notes
+      description: Additional guidance or expectations
+      placeholder: |
+        Focus on understanding the architecture first.
+        Ask questions early and communicate blockers promptly.
+
+  - type: textarea
+    id: assignment_review
+    attributes:
+      label: Assignment Review (Mentor Use)
+      description: To be completed during periodic reviews
+      placeholder: |
+        Progress:
+        Strengths:
+        Improvements:
+        Recommendation:
