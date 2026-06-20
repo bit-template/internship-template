@@ -1,0 +1,124 @@
+name: Program Completion
+description: Final internship/program completion review
+title: "[COMPLETION] "
+labels:
+  - completion
+body:
+  - type: input
+    id: intern_name
+    attributes:
+      label: Intern Name
+      placeholder: "Anand G"
+    validations:
+      required: true
+
+  - type: input
+    id: mentor_name
+    attributes:
+      label: Mentor Name
+      placeholder: "John Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: Program Duration
+      placeholder: "3 Months"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: final_level
+    attributes:
+      label: Final Contributor Level
+      options:
+        - Trainee Engineer
+        - Associate Contributor
+        - Project Contributor
+        - Technical Lead Intern
+    validations:
+      required: true
+
+  - type: textarea
+    id: projects
+    attributes:
+      label: Projects Contributed
+      placeholder: |
+        - FaaS Platform
+        - AI Agent Framework
+        - Research Support Platform
+    validations:
+      required: true
+
+  - type: textarea
+    id: achievements
+    attributes:
+      label: Key Achievements
+      placeholder: |
+        - Completed training program
+        - Submitted 12 Pull Requests
+        - Reviewed 8 Pull Requests
+        - Implemented Node Registration Service
+    validations:
+      required: true
+
+  - type: input
+    id: pull_requests
+    attributes:
+      label: Total Pull Requests
+      placeholder: "12"
+
+  - type: input
+    id: issues_completed
+    attributes:
+      label: Total Issues Completed
+      placeholder: "25"
+
+  - type: input
+    id: reviews
+    attributes:
+      label: Total Reviews Performed
+      placeholder: "8"
+
+  - type: textarea
+    id: mentor_feedback
+    attributes:
+      label: Final Mentor Feedback
+      placeholder: "Overall assessment of performance."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: certificate
+    attributes:
+      label: Experience Certificate
+      options:
+        - Approved
+        - Approved with Distinction
+        - Not Approved
+    validations:
+      required: true
+
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Future Recommendation
+      options:
+        - Open Source Contributor
+        - Project Contributor
+        - Mentor Candidate
+        - Technical Lead Candidate
+        - Reapply After Additional Training
+
+  - type: checkboxes
+    id: completion_checklist
+    attributes:
+      label: Completion Checklist
+      options:
+        - label: Training completed
+        - label: Evaluation completed
+        - label: Project work completed
+        - label: Mentor review completed
+        - label: Certificate decision recorded
+        - label: Completion approved
