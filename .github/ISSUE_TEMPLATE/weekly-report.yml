@@ -1,0 +1,156 @@
+name: Weekly Report
+description: Submit a weekly progress report
+title: "[WEEKLY] "
+labels:
+  - weekly-report
+body:
+  - type: input
+    id: trainee_name
+    attributes:
+      label: Trainee Name
+      placeholder: Anand G
+    validations:
+      required: true
+
+  - type: input
+    id: mentor_name
+    attributes:
+      label: Mentor Name
+      placeholder: John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: reporting_week
+    attributes:
+      label: Reporting Week
+      description: Example 2026-W30
+      placeholder: 2026-W30
+    validations:
+      required: true
+
+  - type: dropdown
+    id: current_level
+    attributes:
+      label: Current Level
+      options:
+        - Trainee Engineer
+        - Associate Contributor
+        - Project Contributor
+        - Technical Lead Intern
+    validations:
+      required: true
+
+  - type: textarea
+    id: completed_activities
+    attributes:
+      label: Activities Completed This Week
+      description: List training, assignments, tasks, or project work completed
+      placeholder: |
+        - Completed Git Fundamentals training
+        - Created first Pull Request
+        - Reviewed SDLC materials
+        - Participated in sprint meeting
+    validations:
+      required: true
+
+  - type: textarea
+    id: github_contributions
+    attributes:
+      label: GitHub Contributions
+      description: Include PRs, Issues, Reviews, and Documentation updates
+      placeholder: |
+        PRs:
+        - #12 Git Exercise
+
+        Issues:
+        - TRAIN-003
+
+        Reviews:
+        - Reviewed PR #15
+
+        Documentation:
+        - Updated README.md
+
+  - type: textarea
+    id: learning_outcomes
+    attributes:
+      label: Key Learnings
+      description: What did you learn this week?
+      placeholder: |
+        - Git branching strategy
+        - Pull Request workflow
+        - Basic SDLC concepts
+    validations:
+      required: true
+
+  - type: textarea
+    id: challenges
+    attributes:
+      label: Challenges / Blockers
+      description: Mention anything preventing progress
+      placeholder: |
+        - Difficulty understanding merge conflicts
+        - Need guidance on JIRA workflows
+
+  - type: textarea
+    id: mentor_support
+    attributes:
+      label: Support Needed From Mentor
+      description: Areas where mentor assistance is required
+      placeholder: |
+        - Review Git workflow
+        - Clarify sprint planning concepts
+
+  - type: textarea
+    id: next_week_plan
+    attributes:
+      label: Plan For Next Week
+      description: Activities planned for the upcoming week
+      placeholder: |
+        - Complete GitHub workflow training
+        - Finish JIRA assignment
+        - Submit 2 Pull Requests
+    validations:
+      required: true
+
+  - type: dropdown
+    id: progress_status
+    attributes:
+      label: Overall Progress Status
+      options:
+        - On Track
+        - Needs Support
+        - Delayed
+        - Blocked
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Weekly Checklist
+      options:
+        - label: Attended training sessions
+        - label: Updated assigned tasks
+        - label: Submitted required deliverables
+        - label: Communicated blockers promptly
+        - label: Reviewed mentor feedback
+
+  - type: textarea
+    id: additional_comments
+    attributes:
+      label: Additional Comments
+      description: Any additional information you’d like to share
+      placeholder: |
+        Suggestions, feedback, achievements, or concerns.
+
+  - type: textarea
+    id: mentor_feedback
+    attributes:
+      label: Mentor Feedback (To Be Filled By Mentor)
+      description: Mentor assessment of weekly progress
+      placeholder: |
+        Strengths:
+        Areas for Improvement:
+        Recommended Next Steps:
