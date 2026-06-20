@@ -1,0 +1,238 @@
+name: Project Proposal
+description: Propose a new project, service, AI agent, research initiative, or platform enhancement
+title: "[PROPOSAL] "
+labels:
+  - proposal
+body:
+  - type: input
+    id: proposer_name
+    attributes:
+      label: Proposer Name
+      placeholder: "Anand G"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: proposal_type
+    attributes:
+      label: Proposal Type
+      options:
+        - New Project
+        - AI Agent
+        - FaaS Service
+        - Research Initiative
+        - Infrastructure Enhancement
+        - Automation Tool
+        - Documentation Improvement
+        - Training Initiative
+        - Community Program
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: project_name
+    attributes:
+      label: Proposed Project Name
+      placeholder: "Research Assistant Agent"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem_statement
+    attributes:
+      label: Problem Statement
+      description: What problem are you trying to solve?
+      placeholder: "Describe the challenge, pain point, or opportunity that motivates this proposal."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the proposed solution in detail
+      placeholder: "Explain how the proposed project or service will address the problem."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_benefits
+    attributes:
+      label: Expected Benefits
+      description: What value will this proposal provide?
+      placeholder: |
+        - Reduce manual effort
+        - Improve productivity
+        - Support researchers
+        - Enhance infrastructure
+    validations:
+      required: true
+
+  - type: textarea
+    id: target_users
+    attributes:
+      label: Target Users
+      description: Who will benefit from this project?
+      placeholder: |
+        - Students
+        - Researchers
+        - Contributors
+        - Community Members
+        - Project Maintainers
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define what is included and excluded
+      placeholder: |
+        Included:
+        - Feature A
+        - Feature B
+
+        Excluded:
+        - Feature C
+        - Feature D
+    validations:
+      required: true
+
+  - type: textarea
+    id: technical_requirements
+    attributes:
+      label: Technical Requirements
+      description: Technologies, frameworks, tools, and infrastructure needed
+      placeholder: |
+        - Python
+        - FastAPI
+        - PostgreSQL
+        - Docker
+        - GitHub Actions
+
+  - type: textarea
+    id: architecture_idea
+    attributes:
+      label: High-Level Architecture
+      description: Describe the proposed architecture or workflow
+      placeholder: |
+        User
+        ↓
+        API Gateway
+        ↓
+        FaaS Platform
+        ↓
+        AI Agent Service
+
+  - type: textarea
+    id: implementation_plan
+    attributes:
+      label: Implementation Plan
+      description: Suggested phases or milestones
+      placeholder: |
+        Phase 1 - Design
+        Phase 2 - Prototype
+        Phase 3 - MVP
+        Phase 4 - Production Rollout
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimated_effort
+    attributes:
+      label: Estimated Effort
+      options:
+        - Small (Less than 2 weeks)
+        - Medium (2 to 6 weeks)
+        - Large (1 to 3 months)
+        - Extra Large (More than 3 months)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Technical Complexity
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Challenges
+      description: Potential obstacles or concerns
+      placeholder: |
+        - Resource availability
+        - Technical complexity
+        - Integration challenges
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: Existing systems, projects, or services required
+      placeholder: |
+        - FaaS Platform
+        - Reverse Tunnel Service
+        - AI Agent Framework
+
+  - type: textarea
+    id: success_criteria
+    attributes:
+      label: Success Criteria
+      description: How will success be measured?
+      placeholder: |
+        - MVP delivered
+        - Documentation completed
+        - Successfully deployed
+        - Community adoption achieved
+    validations:
+      required: true
+
+  - type: textarea
+    id: contributors
+    attributes:
+      label: Proposed Contributors
+      description: Contributors or teams interested in working on this project
+      placeholder: |
+        - Mentor A
+        - Intern B
+        - Research Team
+
+  - type: textarea
+    id: additional_information
+    attributes:
+      label: Additional Information
+      description: References, links, diagrams, screenshots, or supporting material
+      placeholder: "Add any supporting details here."
+
+  - type: checkboxes
+    id: proposal_checklist
+    attributes:
+      label: Proposal Checklist
+      options:
+        - label: Problem statement clearly defined
+        - label: Proposed solution documented
+        - label: Benefits identified
+        - label: Scope defined
+        - label: Technical requirements identified
+        - label: Risks considered
+        - label: Success criteria documented
+
+  - type: dropdown
+    id: review_status
+    attributes:
+      label: Initial Review Status
+      options:
+        - Pending Review
+        - Under Discussion
+        - Approved
+        - Needs Revision
+        - Rejected
+    validations:
+      required: true
