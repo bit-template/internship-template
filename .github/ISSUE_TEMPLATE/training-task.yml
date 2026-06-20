@@ -1,134 +1,144 @@
 name: Training Task
 description: Assign a training task to an intern
-title: “[TRAIN] “
+title: "[TRAIN] "
 labels:
-
-* training
-    body:
-* type: input
+  - training
+body:
+  - type: input
     id: trainee_name
     attributes:
-    label: Trainee Name
-    description: Name of the intern assigned to this task
-    placeholder: Anand G
+      label: Trainee Name
+      description: Name of the intern assigned to this task
+      placeholder: Anand G
     validations:
-    required: true
-* type: input
+      required: true
+
+  - type: input
     id: mentor_name
     attributes:
-    label: Mentor Name
-    description: Assigned mentor
-    placeholder: John Doe
+      label: Mentor Name
+      description: Assigned mentor
+      placeholder: John Doe
     validations:
-    required: true
-* type: dropdown
+      required: true
+
+  - type: dropdown
     id: category
     attributes:
-    label: Training Category
-    description: Select the training area
-    options:
-    - Git
-    - GitHub
-    - Linux
-    - Programming
-    - SDLC
-    - Agile
-    - JIRA
-    - Requirement Engineering
-    - Cybersecurity
-    - Documentation
-    - Code Review
-    - Testing
-    - DevOps
-    - Cloud Computing
-    - AI Agents
-    - Research
-    - Other
+      label: Training Category
+      description: Select the training area
+      options:
+        - Git
+        - GitHub
+        - Linux
+        - Programming
+        - SDLC
+        - Agile
+        - JIRA
+        - Requirement Engineering
+        - Cybersecurity
+        - Documentation
+        - Code Review
+        - Testing
+        - DevOps
+        - Cloud Computing
+        - AI Agents
+        - Research
+        - Other
     validations:
-    required: true
-* type: textarea
+      required: true
+
+  - type: textarea
     id: objective
     attributes:
-    label: Objective
-    description: What should the trainee learn from this task?
-    placeholder: |
-    Learn Git branching strategies and pull request workflow.
+      label: Objective
+      description: What should the trainee learn from this task?
+      placeholder: |
+        Learn Git branching strategies and pull request workflow.
     validations:
-    required: true
-* type: textarea
+      required: true
+
+  - type: textarea
     id: prerequisites
     attributes:
-    label: Prerequisites
-    description: Knowledge or tasks that should be completed first
-    placeholder: |
-    - Git installation
-    - Git basics
-    - GitHub account setup
-* type: textarea
+      label: Prerequisites
+      description: Knowledge or tasks that should be completed first
+      placeholder: |
+        - Git installation
+        - Git basics
+        - GitHub account setup
+
+  - type: textarea
     id: task_description
     attributes:
-    label: Task Description
-    description: Detailed instructions for the trainee
-    placeholder: |
-    Create a feature branch.
-    Update README.md.
-    Commit changes.
-    Push branch.
-    Create Pull Request.
+      label: Task Description
+      description: Detailed instructions for the trainee
+      placeholder: |
+        Create a feature branch.
+        Update README.md.
+        Commit changes.
+        Push branch.
+        Create Pull Request.
     validations:
-    required: true
-* type: textarea
+      required: true
+
+  - type: textarea
     id: deliverables
     attributes:
-    label: Expected Deliverables
-    description: Outputs required to complete this task
-    placeholder: |
-    - Pull Request created
-    - Documentation updated
-    - Screenshots attached
+      label: Expected Deliverables
+      description: Outputs required to complete this task
+      placeholder: |
+        - Pull Request created
+        - Documentation updated
+        - Screenshots attached
     validations:
-    required: true
-* type: textarea
+      required: true
+
+  - type: textarea
     id: acceptance_criteria
     attributes:
-    label: Acceptance Criteria
-    description: Conditions that must be met before task completion
-    placeholder: |
-    - Pull Request approved
-    - No review comments pending
-    - Documentation updated
+      label: Acceptance Criteria
+      description: Conditions that must be met before task completion
+      placeholder: |
+        - Pull Request approved
+        - No review comments pending
+        - Documentation updated
     validations:
-    required: true
-* type: textarea
+      required: true
+
+  - type: textarea
     id: resources
     attributes:
-    label: Learning Resources
-    description: Helpful references and learning materials
-    placeholder: |
-    - Git Documentation
-    - GitHub Guides
-    - Internal Training Materials
-* type: input
+      label: Learning Resources
+      description: Helpful references and learning materials
+      placeholder: |
+        - Git Documentation
+        - GitHub Guides
+        - Internal Training Materials
+
+  - type: input
     id: due_date
     attributes:
-    label: Due Date
-    description: Expected completion date
-    placeholder: YYYY-MM-DD
-* type: checkboxes
+      label: Due Date
+      description: Expected completion date
+      placeholder: YYYY-MM-DD
+
+  - type: checkboxes
     id: completion_checklist
     attributes:
-    label: Completion Checklist
-    options:
-    - label: Training material reviewed
-    - label: Task implementation completed
-    - label: Documentation updated
-    - label: Pull Request submitted
-    - label: Review comments resolved
-    - label: Mentor approval received
-* type: textarea
+      label: Completion Checklist
+      options:
+        - label: Training material reviewed
+        - label: Task implementation completed
+        - label: Documentation updated
+        - label: Pull Request submitted
+        - label: Review comments resolved
+        - label: Mentor approval received
+
+  - type: textarea
     id: mentor_notes
     attributes:
-    label: Mentor Notes
-    description: Additional guidance from the mentor
-    placeholder: |
-    Focus on understanding the workflow rather than completing quickly.
+      label: Mentor Notes
+      description: Additional guidance from the mentor
+      placeholder: |
+        Focus on understanding the workflow rather than completing quickly.
