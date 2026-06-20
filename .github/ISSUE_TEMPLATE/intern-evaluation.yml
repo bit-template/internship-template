@@ -1,0 +1,199 @@
+name: Intern Evaluation
+description: Evaluate intern training progress and project readiness
+title: "[EVALUATION] "
+labels:
+  - evaluation
+body:
+  - type: input
+    id: trainee_name
+    attributes:
+      label: Intern Name
+      placeholder: Anand G
+    validations:
+      required: true
+
+  - type: input
+    id: mentor_name
+    attributes:
+      label: Evaluating Mentor
+      placeholder: John Doe
+    validations:
+      required: true
+
+  - type: input
+    id: evaluation_period
+    attributes:
+      label: Evaluation Period
+      description: Example - Training Phase, Month 1, Quarter 1
+      placeholder: Training Phase
+    validations:
+      required: true
+
+  - type: dropdown
+    id: current_level
+    attributes:
+      label: Current Contributor Level
+      options:
+        - Trainee Engineer
+        - Associate Contributor
+        - Project Contributor
+        - Technical Lead Intern
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Evaluation Criteria
+        Please provide scores based on the defined evaluation model.
+
+  - type: input
+    id: attendance_score
+    attributes:
+      label: Attendance & Participation (0-10)
+      placeholder: 8
+
+  - type: input
+    id: training_score
+    attributes:
+      label: Training Completion (0-20)
+      placeholder: 18
+
+  - type: input
+    id: assignment_score
+    attributes:
+      label: Technical Assignments (0-20)
+      placeholder: 17
+
+  - type: input
+    id: github_score
+    attributes:
+      label: GitHub Contributions (0-20)
+      placeholder: 16
+
+  - type: input
+    id: project_score
+    attributes:
+      label: Project Contributions (0-20)
+      placeholder: 15
+
+  - type: input
+    id: communication_score
+    attributes:
+      label: Documentation & Communication (0-10)
+      placeholder: 8
+
+  - type: textarea
+    id: achievements
+    attributes:
+      label: Key Achievements
+      description: Highlight significant accomplishments
+      placeholder: |
+        - Completed all Git training modules
+        - Submitted 5 Pull Requests
+        - Participated in code reviews
+        - Updated project documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: strengths
+    attributes:
+      label: Strengths
+      placeholder: |
+        - Quick learner
+        - Good communication
+        - Strong problem-solving skills
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvements
+    attributes:
+      label: Areas for Improvement
+      placeholder: |
+        - Improve testing practices
+        - Better commit message quality
+        - Increase code review participation
+    validations:
+      required: true
+
+  - type: textarea
+    id: github_activity
+    attributes:
+      label: GitHub Activity Summary
+      placeholder: |
+        Pull Requests:
+        Issues Completed:
+        Reviews Performed:
+        Documentation Contributions:
+
+  - type: textarea
+    id: mentor_comments
+    attributes:
+      label: Mentor Comments
+      placeholder: |
+        Overall performance assessment and observations.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: readiness
+    attributes:
+      label: Project Readiness
+      options:
+        - Ready for Project Assignment
+        - Ready with Mentor Support
+        - Additional Training Required
+        - Not Yet Ready
+    validations:
+      required: true
+
+  - type: dropdown
+    id: recommendation
+    attributes:
+      label: Recommendation
+      options:
+        - Promote to Associate Contributor
+        - Promote to Project Contributor
+        - Promote to Technical Lead Intern
+        - Continue Current Level
+        - Additional Training Required
+    validations:
+      required: true
+
+  - type: dropdown
+    id: certificate_eligibility
+    attributes:
+      label: Certificate Eligibility
+    options:
+      - Eligible
+      - Eligible After Completion
+      - Not Eligible
+    validations:
+      required: true
+
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Recommended Next Steps
+      placeholder: |
+        - Join FaaS Platform project
+        - Complete advanced GitHub training
+        - Participate in sprint planning
+        - Begin code review activities
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: review_checklist
+    attributes:
+      label: Evaluation Checklist
+      options:
+        - label: Attendance reviewed
+        - label: Training completion verified
+        - label: GitHub contributions verified
+        - label: Assignment submissions reviewed
+        - label: Mentor feedback completed
+        - label: Promotion decision recorded
+        - label: Next steps communicated
