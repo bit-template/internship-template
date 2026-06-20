@@ -8,7 +8,7 @@ body:
     id: trainee_name
     attributes:
       label: Intern Name
-      placeholder: Anand G
+      placeholder: "Anand G"
     validations:
       required: true
 
@@ -16,7 +16,7 @@ body:
     id: mentor_name
     attributes:
       label: Evaluating Mentor
-      placeholder: John Doe
+      placeholder: "John Doe"
     validations:
       required: true
 
@@ -25,7 +25,7 @@ body:
     attributes:
       label: Evaluation Period
       description: Example - Training Phase, Month 1, Quarter 1
-      placeholder: Training Phase
+      placeholder: "Training Phase"
     validations:
       required: true
 
@@ -51,37 +51,37 @@ body:
     id: attendance_score
     attributes:
       label: Attendance & Participation (0-10)
-      placeholder: 8
+      placeholder: "8"
 
   - type: input
     id: training_score
     attributes:
       label: Training Completion (0-20)
-      placeholder: 18
+      placeholder: "18"
 
   - type: input
     id: assignment_score
     attributes:
       label: Technical Assignments (0-20)
-      placeholder: 17
+      placeholder: "17"
 
   - type: input
     id: github_score
     attributes:
       label: GitHub Contributions (0-20)
-      placeholder: 16
+      placeholder: "16"
 
   - type: input
     id: project_score
     attributes:
       label: Project Contributions (0-20)
-      placeholder: 15
+      placeholder: "15"
 
   - type: input
     id: communication_score
     attributes:
       label: Documentation & Communication (0-10)
-      placeholder: 8
+      placeholder: "8"
 
   - type: textarea
     id: achievements
@@ -132,8 +132,7 @@ body:
     id: mentor_comments
     attributes:
       label: Mentor Comments
-      placeholder: |
-        Overall performance assessment and observations.
+      placeholder: "Overall performance assessment and observations."
     validations:
       required: true
 
@@ -166,10 +165,10 @@ body:
     id: certificate_eligibility
     attributes:
       label: Certificate Eligibility
-    options:
-      - Eligible
-      - Eligible After Completion
-      - Not Eligible
+      options:
+        - Eligible
+        - Eligible After Completion
+        - Not Eligible
     validations:
       required: true
 
