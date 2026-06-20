@@ -38,7 +38,7 @@ Students may work on:
 - Open-source software initiatives
 - Remote services and cloud-native applications
 
-See **PROJECTS.md** for the current list of active projects.
+See [PROJECTS.md](PROJECTS.md) for the current list of active projects.
 
 ---
 
@@ -125,7 +125,7 @@ Participants who successfully contribute to project activities may receive an ex
 5. Start with beginner-friendly issues.
 6. Submit your first Pull Request.
 
-For contribution guidelines, see **CONTRIBUTING.md**.
+For contribution guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ---
 
